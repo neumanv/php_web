@@ -5,11 +5,6 @@ $apellidos = $_POST["apellidos"];
 $email = $_POST["email"];
 $convivientes = $_POST["mate"];
 $favorito = $_POST["favorito"];
-
-$sexos = $_POST["sexo"];
-foreach($sexos as $sexo){
-}
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,7 +37,7 @@ foreach($sexos as $sexo){
                 <td><?= $email ?></td>
                 <td><?= $sexo ?></td>
                 <td><?= $convivientes ?></td>
-                <td>@mdo</td>
+                <td><?= $hobby ?></td>
                 <td><?= $favorito ?></td>
             </tr>
         </tbody>

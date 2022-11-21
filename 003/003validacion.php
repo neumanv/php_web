@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Act 2</title>
+    <title>Act 3</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="js/bootstrap.bundle.js"></script>
@@ -15,24 +15,24 @@
             <div class="card-body">
                 <h3 class="card-title text-center">FORMULARIO</h3>
                 <div class="card-text">
-                    <form action="002formulario.php" method="post">
+                    <for method="post">
                         <label>Nombre: </label>
-                        <input type="text" name="nombre" class="form-control form-control-sm">
+                            <input type="text" name="nombre" class="form-control form-control-sm" required>
                         <label>Apellidos: </label>
-                        <input type="text" name="apellidos" class="form-control form-control-sm">
+                            <input type="text" name="apellidos" class="form-control form-control-sm" required>
                         <label>Email: </label>
-                        <input type="email" name="email" class="form-control form-control-sm">
+                            <input type="email" name="email" class="form-control form-control-sm" required>
                         <p>Sexo</p>
                         <p><input type="radio" name="sexo[]" id="hombre"> Hombre</input>
                             <input type="radio" name="sexo[]" id="mujer"> Mujer</input>
                         </p>
                         <p><label>Convivientes en el domicilio:</label></p>
-                        <p><input type="number" name="mate"/></p>
+                        <p><input type="number" name="mate" required/></p>
                         <p>Aficiones: </p>
-                        <label><input type="checkbox" name="hobby[]" id="dinero" required> Dinero</input></label>
-                        <label><input type="checkbox" name="hobby[]" id="coche"> Coches</input></label>
-                        <label><input type="checkbox" name="hobby[]" id="coca"> Cocaína</input></label>
-                        <label><input type="checkbox" name="hobby[]" id="anfeta"> Anfetamina</input></label>
+                            <label><input type="checkbox" name="hobby[]" id="dinero"> Dinero</input></label>
+                            <label><input type="checkbox" name="hobby[]" id="coche"> Coches</input></label>
+                            <label><input type="checkbox" name="hobby[]" id="coca"> Cocaína</input></label>
+                            <label><input type="checkbox" name="hobby[]" id="anfeta"> Anfetamina</input></label>
                         <p>Menú favorito: 
                             <select name="favorito">
                                 <option>Jamón</option>
@@ -42,7 +42,7 @@
                             </select>
                         </p>
                     </div>
-                <button href="002formulario.php" name="submit" class="btn btn-primary btn-block">Enviar</button>
+                <buttonname="submit" class="btn btn-primary btn-block">Enviar</buttonname=>
                 </form>
             </div>
         </div>
@@ -50,3 +50,11 @@
     </div>
 </body>
 </html>
+
+<?php
+$nombre = $_POST["nombre"];
+$apellidos = $_POST["apellidos"];
+$email = $_POST["email"];
+$convivientes = $_POST["mate"];
+$favorito = $_POST["favorito"];
+?>
