@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Act 1 post</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/fav_icon.png">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+<body>
+    <div class="global-container">
+        <div class="card login-form">
+        <div class="card-body">
+            <h3 class="card-title text-center">FORMULARIO CON $_SERVER</h3>
+            <div class="card-text">
+                <form action="001server.php" method="post">
+                    <div class="form-group">
+                        <label>Nombre: </label>
+                            <input type="text" name="nombre" class="form-control form-control-sm">
+                        <label>Apellidos: </label>
+                            <input type="text" name="apellidos" class="form-control form-control-sm">
+                        <label>Usuario: </label>
+                            <input type="text" name="user" class="form-control form-control-sm">
+                        <label>Contraseña: </label>
+                            <input type="password" name="contrasena" class="form-control form-control-sm"><br>
+                    </div>
+                    <button href="001server.php" type="submit" class="btn btn-primary btn-block">Entrar</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
