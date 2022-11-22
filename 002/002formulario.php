@@ -6,6 +6,9 @@ $email = $_POST["email"];
 $sexo = $_POST['sexo'];
 $convivientes = $_POST["mate"];
 $favorito = $_POST["favorito"];
+if(isset($_POST['hobby'])) {
+    $hobby = $_POST['hobby'];
+}
 
 ?>
 <!DOCTYPE html>
@@ -39,7 +42,7 @@ $favorito = $_POST["favorito"];
                 <td><?= $email ?></td>
                 <td><?= $sexo ?></td>
                 <td><?= $convivientes ?></td>
-                <td><?= $hobby ?></td>
+                <td><?php print implode($hobby); ?></td>
                 <td><?= $favorito ?></td>
             </tr>
         </tbody>
