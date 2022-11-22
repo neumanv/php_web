@@ -19,6 +19,6 @@ $user =  strtolower($user);
         echo "La contraseña es demasiado larga.";
     }else{
         //Abrir sesión 
-        header('Location: http://localhost/php_web/012/012peliculas.php');
+        header('Location: ../012/012peliculas.php');
     }
 ?>

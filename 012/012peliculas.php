@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION['guillermo'])) {
+    $_SESSION['guillermo'] = 0;
+}else{
+    $_SESSION['guillermo']++;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,5 +24,6 @@
         <li>Spiderman</li>
         <li>Batman</li>
     </ul>
+    <a href="../013/013logout.php"><button type="submit" class="btn btn-primary btn-block">Cerrar sesión</button></a>
 </body>
 </html>
