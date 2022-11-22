@@ -11,5 +11,10 @@
 </head>
 <body>
     <h3 class="card-title text-center">LISTADO DE PELÍCULAS</h3>
+    <ul>
+        <li>Titanic</li>
+        <li>Spiderman</li>
+        <li>Batman</li>
+    </ul>
 </body>
 </html>
