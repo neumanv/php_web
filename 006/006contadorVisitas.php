@@ -12,19 +12,17 @@
 <body>
     <div class="container mt-5">
         <a href="006contadorVisitas.php"><button name="cuenta" class="btn btn-primary btn-block">Ver visitas</button></a>
-        <button name="reinicio" class="btn btn-primary btn-block">Reiniciar</button>
+        <a href="006contadorVisitas.php"><button name="reinicio" class="btn btn-primary btn-block">Reiniciar</button></a>
     </div>
 </body>
 </html>
 
 <?php
-if(isset($_COOKIE["visita"] ) ) {
-    setcookie( "visita", $_COOKIE["visita"] + 1, time() + 3600 * 24 );
-    $mensaje = 'Numero de visitas: '.$_COOKIE["visita"];
-}
-else {
-
-    setcookie( "visita", 1, time() + 3600 * 24 );
-    $mensaje = "Primera vez";
+if(isset($_COOKIE["cuenta"])){
+    setcookie( "cuenta", $_COOKIE["cuenta"] + 1, time() + 3600 * 24 );
+    echo "Numero de visitas: ".$_COOKIE["cuenta"];
+}else{
+    setcookie( "cuenta", 1, time() + 3600 * 24 );
+    echo "Primera vez";
 }
 ?>
