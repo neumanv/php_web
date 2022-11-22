@@ -15,7 +15,7 @@ if (isset($_FILES['image'])) {
         $errors[] = 'El archivo no puede pesar más de 2MB';
     }
     if (empty($errors) == true) {
-        echo "La imagen se ha guardado correctamente";
+        echo "El archivo se ha guardado correctamente";
     } else {
         print_r($errors);
     }
