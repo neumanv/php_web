@@ -34,7 +34,7 @@
                             <label><input type="checkbox" name="hobby[]" id="coca"> Cocaína</input></label>
                             <label><input type="checkbox" name="hobby[]" id="anfeta"> Anfetamina</input></label>
                         <p>Menú favorito: 
-                            <select name="favorito">
+                            <select name="favorito" required>
                                 <option>Jamón</option>
                                 <option>Pollo</option>
                                 <option>Agua</option>
@@ -42,7 +42,7 @@
                             </select>
                         </p>
                     </div>
-                <buttonname="submit" class="btn btn-primary btn-block">Enviar</buttonname=>
+                <buttonname="submit" class="btn btn-primary btn-block">Enviar</buttonname>
                 </form>
             </div>
         </div>

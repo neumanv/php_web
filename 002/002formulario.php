@@ -3,8 +3,10 @@
 $nombre = $_POST["nombre"];
 $apellidos = $_POST["apellidos"];
 $email = $_POST["email"];
+$sexo = $_POST['sexo'];
 $convivientes = $_POST["mate"];
 $favorito = $_POST["favorito"];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
